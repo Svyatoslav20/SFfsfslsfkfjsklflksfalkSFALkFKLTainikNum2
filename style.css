@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playpen+Sans:wght@100..800&family=Science+Gothic:wght@100..900&display=swap');
+* {
+    margin:0px;
+    padding: 0px;
+}
+body {
+    font-size: 28px;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+.state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-family:  "Playpen Sans";
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(118, 192, 43);
+    -webkit-text-stroke: 3px rgb(73, 117, 29);
+    background-color: rgba(133, 248, 133, 0.308);
+    border-bottom: 3px solid black ;
+}
+.info {
+    font-size: 48px;
+    margin-bottom:15px;
+    margin-top: 20px;
+}
+.money {
+    font-size: 42px;
+}
+.clickbtn {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(183, 255, 116);
+    font-size: 28px;
+    font-style:oblique;
+    color: rgb(48, 66, 30) ;
+    margin-bottom: 50px;
+}
+.clickbtn:hover {
+    cursor: pointer;
+    background-color: rgb(157, 238, 36);
+    color: rgb(61, 160, 78) ;
+    transform: scale(1.03);
+}
+.desc {
+    margin: 20px;
+    font-size: 28px;
+} 
+.buybtn {
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(253, 236, 83);
+    font-size: 20px;
+    border-radius: 10px;
+    color: rgb(48, 66, 30) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.buybtn:hover {
+    cursor: pointer;
+    transform: translateX(2px);
+    background-color: rgb(228, 195, 49);
+}
+.catalog {
+    background-color: aliceblue;
+    width: 500px;
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.menu {
+    display: grid;  
+    justify-content:flex-start;
+    gap: 15px;
+    overflow-y: auto;
+    max-height: 550px;
+    max-width: 600px;
+    border: 4px solid black;
+    border-right: 2px solid black;
+    border-radius: 20px;
+    background-color: #e7fbff;
+    margin: 20px;
+}
+
+.menu::-webkit-scrollbar {
+    width: 12px;
+    
+}
+
+.menu::-webkit-scrollbar-track {
+    background: #bbf1ff81;
+    border-left: 3px solid black;
+    border-radius: 20px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background: #7fecff;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #75d9eb;
+    cursor:s-resize;
+}
+.character {
+    position: fixed;
+    top: 150px;
+    right: 30px;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    border: 3px solid rgb(202, 202, 202);
+    padding: 30px;
+    padding-left: 60px;
+}
+.main {
+    font-size: 36px;
+    margin-right: 5px;
+    opacity: 0;
+    color: gray;
+    -webkit-text-stroke: 1px rgb(185, 185, 185);
+    animation: fadeIn 0.6s forwards;
+}
+@keyframes fadeIn {
+   to { opacity: 1; transform: translateY(-8px)}
+}
+@keyframes fade {
+   to { opacity: 1;}
+}
